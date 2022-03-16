@@ -1,10 +1,9 @@
-
 def read_option():
     while True:
-        user_option = input("This is a list of your options: add: Add an Employee, remove: Remove an Employee, list: List the Employees ,update: Update Employee Data, exit: Exit the app")
+        user_option = input("This is a list of your options: \nadd: Add an Employee, \nremove: Remove an Employee, \nlist: List the Employees ,\nupdate: Update Employee Data, \nexit: Exit the app\nsave: Save to JSON\nload: Load from JSON\n")
         user_option = user_option.strip()
 
-        if user_option in ["add", "remove", "update", "list", "exit"]:
+        if user_option in ["add", "remove", "update", "list", "exit", "save", "load"]:
             return user_option
         else:
             print("Error, You should select one of the options in the list")
